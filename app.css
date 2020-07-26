@@ -1,0 +1,100 @@
+#list{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    border-radius: 1px solid green;
+    background-color:whitesmoke;
+}
+#walkingtext{
+    font-size: 2em;
+    font-style: italic;
+}
+
+#nodata{
+    font-style: italic;
+    color: red;
+    margin: 40 auto;
+}
+
+#nodatadiv{
+    width: 50%;
+    height: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.char{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.imagName{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 20px;   
+}
+
+.imag{ 
+    
+    margin-top: 10px;
+    height: 80%; 
+    width: 150px; 
+    border-radius:20%;
+    
+}
+
+.name{
+    padding-top: 20px;
+    margin-left: 25%;
+    width: 80%;
+    height: 80%;
+
+}
+
+#clickablename{
+    font: 1em sans-serif;
+}
+
+.gender{
+    font: 1em sans-serif;
+}
+
+.height{
+    font-family: 'Courier New', Courier, monospace ;  
+}
+
+#header{
+    align-items: center;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    height: 50px;
+    background-color: violet;
+}
+
+#headertext{
+    margin-top: 10px;
+    margin-left: 15%;
+    width: 70%;
+    height: 70%;
+}
+
+
+/* my Media query*/
+
+@media only screen and (max-width: 900px) {
+.name{
+    padding-top: 0px;
+    margin-left: 20%;
+}
+
+}  
