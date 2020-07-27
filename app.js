@@ -23,7 +23,7 @@ let loadUsers = (data) => {
   results.forEach(function (Name, id) {
     usersHtml += `<div class='char'>
             <div class='imagName'>
-            <img class='imag' src="images/teacher.jpg" >
+            <img class='imag' src="images/teacher${id}.jpg" >
             <div class='name' data-id='${id}' style="color: inherit" type="text">
             <h4 id='clickablename' data-id='${id}'>${Name.name}</h4></div>
             </div>
