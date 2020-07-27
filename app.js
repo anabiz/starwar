@@ -35,7 +35,6 @@ let loadUsers = (data) => {
 //This function uses the output from the user class the display uer detail when any user's name is clicked.
 let eachUserDetail = (data) => {
   //adding event listener to all the 'clickablename' class(user name)
-  document.querySelector("#list").addEventListener("mouse", function (event) {});
   document.querySelector("#list").addEventListener("click", function (event) {
     if (event.target.id === "clickablename") {
       let id = parseInt(event.target.dataset.id, 10);
@@ -46,13 +45,13 @@ let eachUserDetail = (data) => {
       result.then((user) => {
         //creating a tamplate to fill in the user detail
         let userHtml1 = `<div class='genderHeight' data-id=${id}>
-                    <p class='tobehidden' data-id=${id}>
+                    <div class='hide' data-id=${id}>
                     Height: ${user.Height}
-                    </p>
-                    <p id='gender' data-id=${id}>
+                    </div>
+                    <p class='hide' data-id=${id}>
                     Gender: ${user.Gender}
                     </p>
-                    <p class='tobehiden' data-id=${id}>
+                    <p class='tobehidden' data-id=${id}>
                     Name: ${user.Name}
                     </p>
                     </div>`;
@@ -62,6 +61,33 @@ let eachUserDetail = (data) => {
     }
   });
 };
+
+
+document.querySelector("#list").addEventListener("click", function (event) {
+  if(event.target.className == 'tobehidden'){
+    let ab = event.target.dataset.id;
+    let ac = event.target.parentNode.childNodes[1].dataset.id;
+    let ba = event.target.parentNode.childNodes[1].style.display;
+    let bc = event.target.parentNode.childNodes[3];
+    let x=event.target.parentNode.childNodes;
+    ba.hide
+    if(x[1].style.display==""){
+      x[1].style.display="none"
+      x[3].style.display="none"
+    }else if(x[1].style.display=="block"){
+      x[1].style.display="none"
+      x[3].style.display="none"
+    }else{
+      x[1].style.display="block";
+      x[3].style.display="block"
+    }
+    console.log(event.target.dataset.id)
+    console.log(event.target.parentNode.childNodes[1].dataset.id);
+    console.log(event.target.parentNode.childNodes[1]);
+    console.log(x);
+    console.log(event.target.parentNode.childNodes[1].style.display);
+  } 
+})
 
 // a class with a method(property) that takes a single user details and resolve the user's name, height andb gender.
 const instance = null;

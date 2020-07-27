@@ -60,19 +60,18 @@
 
 }
 
-#clickablename{
-    font: 1em sans-serif;
+.hide{
+    color: black;
+    display: block;
 }
+
+
 #clickablename:hover {
-    color: #E982ED;
-    }
-
-.gender{
-    font: 1em sans-serif;
+    color: #E982ED; 
 }
 
-.height{
-    font-family: 'Courier New', Courier, monospace ;  
+.tobehidden:hover{
+    color: #E982ED;
 }
 
 #header{
