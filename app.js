@@ -67,19 +67,19 @@ document.querySelector("#list").addEventListener("click", function (event) {
   if(event.target.className == 'tobehidden'){
     let hide=event.target.parentNode.childNodes;
     if(hide[1].style.display==""){
-      hide[1].style.display="none"
-      hide[3].style.display="none"
+      hide[1].style.display="none";
+      hide[3].style.display="none";
     }else if(hide[1].style.display=="block"){
-      hide[1].style.display="none"
-      hide[3].style.display="none"
+      hide[1].style.display="none";
+      hide[3].style.display="none";
     }else{
       hide[1].style.display="block";
-      hide[3].style.display="block"
+      hide[3].style.display="block";
     }
     console.log(hide[1]);
     console.log(hide);
   } 
-})
+});
 
 // a class with a method(property) that takes a single user details and resolve the user's name, height andb gender.
 const instance = null;
