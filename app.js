@@ -39,7 +39,7 @@ let eachUserDetail = (data) => {
     if (event.target.id === "clickablename") {
       let id = parseInt(event.target.dataset.id, 10);
       let characterData = data.results[id];
-      //calling the 'getUserProperty' of the 'User' class
+      //calling the static 'getUserProperty' of the 'User' class. Hence, creating a new instance of class "User" 
       const db = User.getUserInstance();
       const result = db.getUserProperty(characterData);
       result.then((user) => {
