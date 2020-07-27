@@ -63,6 +63,9 @@
 #clickablename{
     font: 1em sans-serif;
 }
+#clickablename:hover {
+    color: #E982ED;
+    }
 
 .gender{
     font: 1em sans-serif;

@@ -24,7 +24,8 @@ let loadUsers = (data) => {
     usersHtml += `<div class='char'>
             <div class='imagName'>
             <img class='imag' src="images/teacher.jpg" >
-            <div class='name' data-id='${id}'><h4 id='clickablename' data-id='${id}'>${Name.name}</h4></div>
+            <div class='name' data-id='${id}' style="color: inherit" type="text">
+            <h4 id='clickablename' data-id='${id}'>${Name.name}</h4></div>
             </div>
             </div><hr>`;
   });
@@ -34,6 +35,7 @@ let loadUsers = (data) => {
 //This function uses the output from the user class the display uer detail when any user's name is clicked.
 let eachUserDetail = (data) => {
   //adding event listener to all the 'clickablename' class(user name)
+  document.querySelector("#list").addEventListener("mouse", function (event) {});
   document.querySelector("#list").addEventListener("click", function (event) {
     if (event.target.id === "clickablename") {
       let id = parseInt(event.target.dataset.id, 10);
