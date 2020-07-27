@@ -62,30 +62,22 @@ let eachUserDetail = (data) => {
   });
 };
 
-
+//toggles between hide and show user details
 document.querySelector("#list").addEventListener("click", function (event) {
   if(event.target.className == 'tobehidden'){
-    let ab = event.target.dataset.id;
-    let ac = event.target.parentNode.childNodes[1].dataset.id;
-    let ba = event.target.parentNode.childNodes[1].style.display;
-    let bc = event.target.parentNode.childNodes[3];
-    let x=event.target.parentNode.childNodes;
-    ba.hide
-    if(x[1].style.display==""){
-      x[1].style.display="none"
-      x[3].style.display="none"
-    }else if(x[1].style.display=="block"){
-      x[1].style.display="none"
-      x[3].style.display="none"
+    let hide=event.target.parentNode.childNodes;
+    if(hide[1].style.display==""){
+      hide[1].style.display="none"
+      hide[3].style.display="none"
+    }else if(hide[1].style.display=="block"){
+      hide[1].style.display="none"
+      hide[3].style.display="none"
     }else{
-      x[1].style.display="block";
-      x[3].style.display="block"
+      hide[1].style.display="block";
+      hide[3].style.display="block"
     }
-    console.log(event.target.dataset.id)
-    console.log(event.target.parentNode.childNodes[1].dataset.id);
-    console.log(event.target.parentNode.childNodes[1]);
-    console.log(x);
-    console.log(event.target.parentNode.childNodes[1].style.display);
+    console.log(hide[1]);
+    console.log(hide);
   } 
 })
 
