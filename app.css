@@ -109,6 +109,10 @@
 #list{
     width: 100%;
  }
+  
+    #clickablename{
+        width:100%;
+    }
     
 .name{
     margin-left: 5%;
