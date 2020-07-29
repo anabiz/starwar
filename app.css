@@ -98,5 +98,13 @@
     padding-top: 0px;
     margin-left: 20%;
 }
+    
+.imag{ 
+    margin-top: 10px;
+    height: 80%; 
+    width: 80%; 
+    border-radius:20%;
+    
+}
 
 }  
