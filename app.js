@@ -24,8 +24,8 @@ let loadUsers = (data) => {
     usersHtml += `<div class='char'>
             <div class='imagName'>
             <img class='imag' src="images/teacher${id}.jpg" >
-            <div class='name' data-id='${id}' style="color: inherit" type="text">
-            <h4 id='clickablename' data-id='${id}'>${Name.name}</h4></div>
+            <p class='name' data-id='${id}' style="color: inherit" type="text">
+            <h4 id='clickablename' data-id='${id}'>${Name.name}</h4></p>
             </div>
             </div><hr>`;
   });
