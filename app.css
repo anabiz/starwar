@@ -110,10 +110,12 @@
     width: 100%;
  }
     
-    .name{
-    padding-top: 20px;
+.name{
     margin-left: 5%;
-
 }
+ 
+.char{
+    height: 250px;
+}    
 
 }  
