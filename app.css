@@ -54,7 +54,7 @@
 
 .name{
     padding-top: 20px;
-    margin-left: 15%;
+    margin-left: 25%;
     width: 80%;
     height: 80%;
 
@@ -108,5 +108,12 @@
 } 
 #list{
     width: 100%;
-    }
+ }
+    
+    .name{
+    padding-top: 20px;
+    margin-left: 5%;
+
+}
+
 }  
