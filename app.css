@@ -93,7 +93,7 @@
 
 /* my Media query*/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
 .name{
     padding-top: 0px;
     margin-left: 20%;
@@ -105,6 +105,8 @@
     width: 80%; 
     border-radius:20%;
     
-}
-
+} 
+#list{
+    width: 100%;
+    }
 }  
